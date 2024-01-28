@@ -14,9 +14,9 @@ public class MessageHelper {
 
     public NPCRequest decrypt(byte[] data) {
         ByteArrayDataInput in = ByteStreams.newDataInput(data);
-        String subChannel = in.readUTF();
+        boolean isConsole = in.readBoolean();
 
-        boolean isConsole = isBool(in.readUTF());
+        String subChannel = in.readUTF();
         String playerName = in.readUTF();
         String message = in.readUTF();
 
