@@ -157,6 +157,20 @@
 
     <dependencies>
         <dependency>
+            <groupId>rip.snake</groupId>
+            <artifactId>snpcp-commons</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.velocitypowered</groupId>
             <artifactId>velocity-api</artifactId>
             <version>3.2.0-SNAPSHOT</version>
