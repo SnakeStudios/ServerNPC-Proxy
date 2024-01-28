@@ -1,3 +1,4 @@
 name: ServerNPC-Bungee
 version: '${project.version}'
 main: rip.snake.snpcp.bungee.ServerNPC
+author: iSnakeBuzz_
