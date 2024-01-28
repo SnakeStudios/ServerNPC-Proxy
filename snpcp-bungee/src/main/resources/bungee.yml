@@ -1,0 +1,3 @@
+name: ServerNPC
+version: '${project.version}'
+main: rip.snake.snpcpbungee.ServerNPC
