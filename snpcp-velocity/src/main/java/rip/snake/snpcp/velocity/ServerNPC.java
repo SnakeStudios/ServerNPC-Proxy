@@ -1,4 +1,4 @@
-package rip.snake.snpcpvelocity;
+package rip.snake.snpcp.velocity;
 
 import com.google.inject.Inject;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 
 @Plugin(
         id = "snpcp-velocity",
-        name = "ServerNPCProxy",
+        name = "servernpc-velocity",
         version = "${VERSION}",
         authors = {"iSnakeBuzz_"},
         url = "https://r.snake.rip/snpc"

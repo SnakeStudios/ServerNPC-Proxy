@@ -1,4 +1,4 @@
-package rip.snake.snpcpbungee;
+package rip.snake.snpcp.bungee;
 
 import net.md_5.bungee.api.plugin.Plugin;
 

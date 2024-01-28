@@ -1,12 +1,11 @@
 {
-  "id": "serverantivpn",
-  "name": "AntiVPN",
-  "version": "${ANTIVPN_VERSION}-b${BUILD_NUMBER}",
-  "url": "https://anti.snake.rip",
+  "id": "snpcp-velocity",
+  "name": "servernpc-velocity",
+  "version": "${SNPCP_VERSION}-b${BUILD_NUMBER}",
+  "url": "https://r.snake.rip/snpc",
   "authors": [
-    "iSnakeBuzz_",
-    "gatogamer_"
+    "iSnakeBuzz_"
   ],
   "dependencies": [],
-  "main": "rip.snake.antivpn.velocity.ServerAntiVPN"
+  "main": "rip.snake.snpcp.velocity.ServerNPC"
 }
