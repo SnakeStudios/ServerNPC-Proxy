@@ -66,6 +66,20 @@
 
     <dependencies>
         <dependency>
+            <groupId>rip.snake</groupId>
+            <artifactId>snpcp-commons</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>io.github.waterfallmc</groupId>
             <artifactId>waterfall-api</artifactId>
             <version>1.20-R0.1-SNAPSHOT</version>
