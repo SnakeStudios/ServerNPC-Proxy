@@ -7,7 +7,7 @@ public final class ServerNPC extends Plugin {
 
     @Override
     public void onEnable() {
-        this.getProxy().getPluginManager().registerListener(this, new MessagesListener());
+        this.getProxy().getPluginManager().registerListener(this, new MessagesListener(this));
     }
 
 }

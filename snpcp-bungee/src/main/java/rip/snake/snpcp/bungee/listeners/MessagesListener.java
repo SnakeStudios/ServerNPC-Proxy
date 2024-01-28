@@ -8,12 +8,15 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 import rip.snake.servernpc.proxy.core.MessageHelper;
 import rip.snake.servernpc.proxy.core.NPCRequest;
+import rip.snake.snpcp.bungee.ServerNPC;
 
 public class MessagesListener implements Listener {
 
+    private final ServerNPC plugin;
     private final String channelName = "servernpc:main";
 
-    public MessagesListener() {
+    public MessagesListener(ServerNPC plugin) {
+        this.plugin = plugin;
         ProxyServer.getInstance().registerChannel(channelName);
     }
 
@@ -23,10 +26,13 @@ public class MessagesListener implements Listener {
         if (!event.getTag().equalsIgnoreCase(channelName)) return;
 
         NPCRequest request = NPCRequest.fromBytes(event.getData());
+        plugin.getLogger().info("Received request: " + request.toString());
+
         ProxiedPlayer player = ProxyServer.getInstance().getPlayer(request.getSender());
         if (player == null) return;
 
         String message = MessageHelper.replace(request.getMessage(), player.getName());
+
 
         if (request.isConsole()) {
             ProxyServer.getInstance().getPluginManager().dispatchCommand(ProxyServer.getInstance().getConsole(), message);
