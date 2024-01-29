@@ -24,7 +24,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: "Latest Build"
-          tag_name: ${{ github.ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             snpcp-multiplatform/target/ServerNPC-*.jar
