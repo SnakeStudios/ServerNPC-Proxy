@@ -23,8 +23,6 @@ jobs:
       - name: release
         uses: softprops/action-gh-release@v1
         with:
-          name: "Latest Build"
-          # get tag_name from github ref without "refs/tags/"
           tag_name: "${{ github.ref_name }}"
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
