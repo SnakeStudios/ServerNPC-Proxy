@@ -26,7 +26,6 @@ public class MessagesListener implements Listener {
         if (!event.getTag().equalsIgnoreCase(channelName)) return;
 
         NPCRequest request = NPCRequest.fromBytes(event.getData());
-        plugin.getLogger().info("Received request: " + request.toString());
 
         ProxiedPlayer player = ProxyServer.getInstance().getPlayer(request.getSender());
         if (player == null) return;
