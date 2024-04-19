@@ -1,5 +1,6 @@
 package rip.snake.snpcp.velocity;
 
+import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.plugin.Plugin;
@@ -21,6 +22,7 @@ public class ServerNPC {
     private final ProxyServer proxyServer;
     private final Logger logger;
 
+    @Inject
     public ServerNPC(ProxyServer server, Logger logger) {
         this.proxyServer = server;
         this.logger = logger;
