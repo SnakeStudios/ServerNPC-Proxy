@@ -14,7 +14,7 @@
 
     <properties>
         <BUILD_NUMBER>1</BUILD_NUMBER>
-        <SNPCP_VERSION>1.0.1</SNPCP_VERSION>
+        <SNPCP_VERSION>1.0.2</SNPCP_VERSION>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
